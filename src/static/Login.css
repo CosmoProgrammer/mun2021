@@ -1,0 +1,15 @@
+.Login {
+      padding: 60px 0;
+      min-width: 480px;
+      border-style: solid;
+      border-color: blue;
+}
+  
+.Login form {
+      margin: 0 auto;
+      max-width: 320px;
+}
+
+.whiteText {
+      color: white;
+}
