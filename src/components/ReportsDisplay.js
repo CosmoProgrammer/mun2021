@@ -25,7 +25,7 @@ function ReportsDisplay(props){
                     <Card.Body>
                         <Card.Title>{report.heading}</Card.Title>
                         <Card.Text>{report.subheading}</Card.Text>
-                        <Link className="btn btn-outline-primary" to={{pathname:`/onlyAuthorizedAllowedHere/pdfDisplayer/${report.pdf}`, param1:report.pdf}}>View Report</Link>
+                        <Link className="btn btn-outline-primary" to={{pathname:`/AuthorizedAllowedHere/pdfDisplayer/${report.pdf}`, param1:report.pdf}}>View Report</Link>
                     </Card.Body>
                 </Card>
                 <br />
