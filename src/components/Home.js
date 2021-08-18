@@ -4,7 +4,7 @@ import { Button, ButtonGroup } from 'react-bootstrap';
 import ReportsDisplay from './ReportsDisplay';
 
 function HomePage(){
-    const [viewCommittee, changeViewCommittee] = useState("ipc");
+    const [viewCommittee, changeViewCommittee] = useState("ls");
     function verifyCommittee(){
         //console.log(`The committee in local storage is ${localStorage.getItem('committee')} and its type is ${typeof(localStorage.getItem('committee'))}`);
         //console.log(`The committee in view is ${viewCommittee} and its type is ${typeof(viewCommittee)}`);
@@ -15,7 +15,7 @@ function HomePage(){
     return(<>
         <br /><br /><br /><center>
         <ButtonGroup classname="me-2">
-            <Button variant="outline-primary" onClick={()=>{changeViewCommittee('ipc')}}>IPC</Button>
+            <Button variant="outline-primary" onClick={()=>{changeViewCommittee('ls')}}>Lok Sabha</Button>
             <Button variant="outline-primary" onClick={()=>{changeViewCommittee('unsc')}}>UNSC</Button>
             <Button variant="outline-primary" onClick={()=>{changeViewCommittee('disec')}}>DISEC</Button>
         </ButtonGroup></center>
