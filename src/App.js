@@ -7,6 +7,7 @@ import NoPageFound from './components/NoPageFound';
 import LoginPage from './components/LoginPage';
 import Ribbon from './components/Ribbon';
 import PrivateRoute from './components/PrivateRoute'
+import PrivatePrivateRoute from './components/PrivatePrivateRoute'
 import HomePage from './components/Home';
 import AddReport from './components/AddReport';
 import AddReportFile from './components/AddReportFile';
@@ -22,7 +23,7 @@ function App() {
       <PrivateRoute path="/onlyAuthorizedAllowedHere/home" component={HomePage} />
       <PrivateRoute path="/onlyAuthorizedAllowedHere/addreport" component={AddReport} />
       <PrivateRoute path="/onlyAuthorizedAllowedHere/addreportfile/" component={AddReportFile} />
-      <PrivateRoute path="/onlyAuthorizedAllowedHere/pdfDisplayer/:url" component={PDFDisplayer} />
+      <PrivatePrivateRoute path="/AuthorizedAllowedHere/pdfDisplayer/:url" component={PDFDisplayer} />
       <Route component={NoPageFound} />
     </Switch>
     </>
